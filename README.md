@@ -83,3 +83,7 @@ Possible features for future versions:
 ## 📄 License
 
 This project is created for educational purposes.
+
+## Development
+
+This project is intended for learning and experimentation with PHP.
