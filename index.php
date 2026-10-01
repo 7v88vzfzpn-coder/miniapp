@@ -1,3 +1,4 @@
+```php
 <?php
 
 $file = "messages.txt";
@@ -9,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($name !== "" && $message !== "") {
 
-        $name = htmlspecialchars($name);
-        $message = htmlspecialchars($message);
+        $name = htmlspecialchars($name, ENT_QUOTES, "UTF-8");
+        $message = htmlspecialchars($message, ENT_QUOTES, "UTF-8");
 
         $time = date("H:i");
 
@@ -66,7 +67,6 @@ if (file_exists($file)) {
 
     </header>
 
-
     <main class="chat">
 
         <?php if (empty($messages)): ?>
@@ -92,7 +92,7 @@ if (file_exists($file)) {
                     <div class="message">
 
                         <div class="avatar">
-                            <?= strtoupper(substr($name, 0, 1)) ?>
+                            <?= htmlspecialchars(strtoupper(substr($name, 0, 1)), ENT_QUOTES, "UTF-8") ?>
                         </div>
 
                         <div class="bubble">
@@ -100,17 +100,17 @@ if (file_exists($file)) {
                             <div class="message-top">
 
                                 <strong>
-                                    <?= $name ?>
+                                    <?= htmlspecialchars($name, ENT_QUOTES, "UTF-8") ?>
                                 </strong>
 
                                 <small>
-                                    <?= $time ?>
+                                    <?= htmlspecialchars($time, ENT_QUOTES, "UTF-8") ?>
                                 </small>
 
                             </div>
 
                             <p>
-                                <?= $message ?>
+                                <?= htmlspecialchars($message, ENT_QUOTES, "UTF-8") ?>
                             </p>
 
                         </div>
@@ -124,7 +124,6 @@ if (file_exists($file)) {
         <?php endif; ?>
 
     </main>
-
 
     <form method="POST" class="form">
 
@@ -155,3 +154,4 @@ if (file_exists($file)) {
 </body>
 
 </html>
+```
