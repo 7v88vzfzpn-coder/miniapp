@@ -22,27 +22,41 @@ This project was created as a small learning project to practice PHP fundamental
 ## 📁 Project Structure
 
 ```text
-mini-messenger/
+miniapp/
 ├── index.php
 ├── style.css
 └── messages.txt
 ```
 
-## 🚀 Run Locally
+## 🚀 Installation
 
-Make sure PHP is installed.
+### Requirements
 
-Start the built-in PHP server:
+- PHP 8.0 or newer
+- A web browser
+
+### Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/7v88vzfzpn-coder/miniapp.git
+cd miniapp
+```
+
+2. Start the built-in PHP server:
 
 ```bash
 php -S localhost:8000
 ```
 
-Then open:
+3. Open the application in your browser:
 
 ```text
 http://localhost:8000
 ```
+
+The application does not require a database.
 
 ## 📚 How It Works
 
