@@ -28,21 +28,20 @@ mini-messenger/
 └── messages.txt
 ```
 
-## 🚀 Run Locally
+## 🚀 Installation
 
-Make sure PHP is installed.
+### Requirements
 
-Start the built-in PHP server:
+- PHP installed on your system
+- A web browser
+
+### Run Locally
+
+1. Clone the repository:
 
 ```bash
-php -S localhost:8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
+git clone https://github.com/7v88vzfzpn-coder/miniapp.git
+cd miniapp
 
 ## 📚 How It Works
 
