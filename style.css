@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0d1117;
+
+    color: #f0f6fc;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+}
+
+.messenger {
+    width: 100%;
+    max-width: 700px;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+header span {
+    color: #8b949e;
+
+    font-size: 13px;
+}
+
+.online {
+    color: #3fb950;
+
+    font-size: 14px;
+}
+
+.chat {
+    flex: 1;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #238636;
+
+    font-weight: bold;
+}
+
+.bubble {
+    max-width: 80%;
+
+    padding: 10px 14px;
+
+    background: #21262d;
+
+    border-radius: 12px;
+}
+
+.message-top {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+.message-top small {
+    color: #8b949e;
+}
+
+.bubble p {
+    margin: 5px 0 0;
+
+    word-break: break-word;
+}
+
+.empty {
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #8b949e;
+}
+
+.form {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid #30363d;
+}
+
+input {
+    padding: 12px;
+
+    border: 1px solid #30363d;
+
+    border-radius: 9px;
+
+    background: #0d1117;
+
+    color: white;
+
+    outline: none;
+}
+
+input[name="name"] {
+    width: 130px;
+}
+
+input[name="message"] {
+    flex: 1;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+button {
+    width: 45px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #238636;
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+@media (max-width: 600px) {
+
+    .messenger {
+        height: 100vh;
+
+        border-radius: 0;
+    }
+
+    input[name="name"] {
+        width: 90px;
+    }
+}
