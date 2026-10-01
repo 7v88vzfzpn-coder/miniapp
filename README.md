@@ -22,7 +22,7 @@ This project was created as a small learning project to practice PHP fundamental
 ## 📁 Project Structure
 
 ```text
-mini-messenger/
+miniapp/
 ├── index.php
 ├── style.css
 └── messages.txt
@@ -32,7 +32,7 @@ mini-messenger/
 
 ### Requirements
 
-- PHP installed on your system
+- PHP 8.0 or newer
 - A web browser
 
 ### Run Locally
